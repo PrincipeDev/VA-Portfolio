@@ -143,3 +143,29 @@ main {
   background-color: #253745;
   margin-top: 20px;
 }
+
+#sobre .line-1{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 280px 600px;
+  gap: 30px;
+  align-items: center;
+}
+
+#sobre .line-2{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 600px 280px;
+  gap: 30px;
+  align-items: center;
+}
+
+#sobre img {
+  width: 280px;
+  height: 360px;
+}
+
+#sobre p {
+  color: var(--text-white);
+  font-size: 14px;
+}
