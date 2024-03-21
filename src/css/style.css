@@ -116,11 +116,17 @@ main {
 }
 
 #projetos h1 {
-  font-size: 54px;
+  font-size: 42px;
   color: var(--text-black);
   text-align: start;
   width: 65vw;
   margin-bottom: 20px;
+}
+
+.container-projeto {
+  display: flex;
+  align-items: center;
+  gap: 32px;
 }
 
 #cards {
@@ -136,12 +142,29 @@ main {
   background-color: white;
 }
 
-#projetos span {
+.container-projeto .pass {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background-color: var(--button-hover);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+#projetos .count {
   width: 18px;
   height: 18px;
   border-radius: 50%;
-  background-color: #253745;
+  background-color: var(--button-hover);
   margin-top: 20px;
+}
+
+.active {
+  background-color: var(--text-black);
 }
 
 #sobre {
@@ -151,7 +174,7 @@ main {
 }
 
 #sobre h1 {
-  font-size: 54px;
+  font-size: 42px;
   color: var(--text-white);
   margin-bottom: 15px;
 }
@@ -159,7 +182,7 @@ main {
 #sobre .line-1{
   display: grid;
   justify-content: center;
-  grid-template-columns: 280px 600px;
+  grid-template-columns: 260px 600px;
   gap: 30px;
   align-items: center;
 }
@@ -167,14 +190,14 @@ main {
 #sobre .line-2{
   display: grid;
   justify-content: center;
-  grid-template-columns: 600px 280px;
+  grid-template-columns: 600px 260px;
   gap: 30px;
   align-items: center;
 }
 
 #sobre img {
-  width: 280px;
-  height: 360px;
+  width: 260px;
+  height: 340px;
 }
 
 #sobre p {
@@ -223,4 +246,32 @@ main {
   border-radius: 25px;
   margin-top: 25px;
   border: none;
+  cursor: pointer;
+  transition: .6s;
+  font-size: 18px;
+}
+
+#form .btn:hover {
+  background-color: var(--button-hover);
+  color: var(--text-black);
+}
+
+footer {
+  width: 1200px;
+  height: 32px;
+  color: var(--text-white);
+  margin: 10px auto;
+  align-items: center;
+  opacity: .6;
+}
+
+footer span {
+  color: var(--text-black);
+  background-color: var(--button-hover);
+  border-radius: 50%;
+  padding: 1px 6px;
+}
+
+footer a {
+  text-decoration: none;
 }

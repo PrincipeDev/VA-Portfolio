@@ -20,9 +20,9 @@
           <h1>Victor Augusto</h1>
           <p>Arquiteto e Urbanista</p>
           <div class="logos-contato">
-            <img src="./src/img/whats.svg" alt="">
-            <img src="./src/img/insta.svg" alt="">
-            <img class="email" src="./src/img/email.svg" alt="">
+            <a href="#"><img src="./src/img/whats.svg" alt=""></a>
+            <a href="#"><img src="./src/img/insta.svg" alt=""></a>
+            <a href="#"><img class="email" src="./src/img/email.svg" alt=""></a>
           </div>
         </div>
       </div>
@@ -31,11 +31,15 @@
   <main>
     <section id="projetos">
       <h1>Projetos</h1>
-      <div id="cards">
-        <div class="card"></div>
-        <div class="card"></div>
+      <div class="container-projeto">
+        <button class="pass voltar">&#60;</button>
+        <div id="cards">
+          <div class="card"></div>
+          <div class="card"></div>
+        </div>
+        <button class="pass proximo">&#62;</button>
       </div>
-      <span></span>
+      <span class="count"></span>
     </section>
 
     <section id="sobre">
@@ -60,6 +64,8 @@
     </section>
   </main>
 
-  <footer></footer>
+  <footer>
+    <p><span>C</span> by <a href="https://www.instagram.com/principedev/" target="_blank">@principedev</a></p>
+  </footer>
 </body>
 </html>
