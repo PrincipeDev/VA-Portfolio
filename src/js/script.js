@@ -1,11 +1,10 @@
-const containerProjeto = document.getElementsByClassName(".container-projet")
-const prevBtn = document.getElementsByClassName(".voltar")
-const nextBtn = document.getElementsByClassName(".proximo")
-const cards = document.getElementsById("#cards")
-const card = document.getElementsByClassName(".card")
-const contador = document.getElementsByClassName(".count")
+const containerProjeto = document.querySelector(".container-projet")
+const prevBtn = document.querySelector(".voltar")
+const nextBtn = document.querySelector(".proximo")
+const cards = document.getElementById("cards")
+const contador = document.querySelector(".count")
 
-slide = [
+let slide = [
   {
     "titulo": "Escritorio",
     "image": "../img/1-Escritorio2.png"
@@ -27,3 +26,23 @@ slide = [
     "image": "../img/5-Suite.png"
   }
 ]
+
+function updateProjetos() {
+  cards.innerHTML = ""
+
+  slide.forEach(item => {
+    const card = document.createElement("div")
+    card.classList.add("card")
+    
+    card.innerHTML = `
+      <div>
+        <img src:"${item.image}"/>
+        <h2>${item.titulo}</h2>
+      </div>
+    `
+
+    cards.appendChild(card)
+  })
+}
+
+updateProjetos()
