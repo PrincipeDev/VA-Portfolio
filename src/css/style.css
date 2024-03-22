@@ -126,11 +126,13 @@ main {
 .container-projeto {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 32px;
 }
 
 #cards {
   display: flex;
+  align-items: center;
   gap: 32px;
 }
 
