@@ -140,7 +140,7 @@ main {
   width: 460px;
   height: 540px;
   border-radius: 25px;
-  background-color: white;
+  background-color: var(--button);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -148,8 +148,16 @@ main {
 }
 
 .card img {
-  width: 260px;
-  height: 320px;
+  width: 380px;
+  height: 470px;
+  border-radius: 15px;
+  margin-bottom: 8px;
+}
+
+.card h2 {
+  color: var(--text-white);
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .container-projeto .pass {
