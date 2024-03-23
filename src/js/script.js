@@ -3,6 +3,7 @@ const prevBtn = document.querySelector(".voltar")
 const nextBtn = document.querySelector(".proximo")
 const cards = document.getElementById("cards")
 let contador = document.querySelector(".count")
+const btnWhats = document.getElementById("btn-whats")
 
 contador = 1
 
@@ -78,3 +79,9 @@ function prevSlide() {
 
 prevBtn.addEventListener("click", prevSlide)
 nextBtn.addEventListener("click", nextSlide)
+
+btnWhats.addEventListener("click", function() {
+  const message = "Olá, Estou precisando conversar com você!"
+  const phone = "63992850579"
+  window.open(`https://wa.me/${phone}?text=${message}`, "_blank")
+})

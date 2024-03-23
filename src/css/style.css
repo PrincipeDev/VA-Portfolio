@@ -85,6 +85,9 @@ body {
   display: grid;
   grid-template-columns: 48px 48px 48px;
   gap: 12px;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
 }
 
 .logos-contato img {
@@ -95,6 +98,12 @@ body {
 .logos-contato .email {
   width: 52px;
   height: 52px;
+}
+
+#btn-whats {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 main {
