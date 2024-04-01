@@ -60,7 +60,7 @@ function updateProjetos() {
 updateProjetos()
 
 function nextSlide() {
-  if(contador == (slide.length / 2)) {
+  if(contador == (slide.length / 2)) { 
     contador = 1
   } else {
     contador++
