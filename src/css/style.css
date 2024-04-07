@@ -30,6 +30,8 @@ body {
 
 #perfil {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .back {
@@ -45,53 +47,50 @@ body {
   display: flex;
   z-index: 2;
   align-items: center;
-  padding-left: 40px;
+  justify-content: center;
+  gap: 8px;
 }
 
 .img-perfil {
-  width: 25vw;
+  width: clamp(15vw, 1rem + 25vw, 30vw);
 }
 
 .descricao {
   display: flex;
   flex-direction: column;
-  margin-left: 20px;
   align-items: center;
   justify-content: center;
-  height: 360px;
+  margin-left: 20px;
 }
 
 .logo {
   position: absolute;
-  width: 25vw;
+  width: clamp(15vw, 1rem + 25vw, 30vw);
   z-index: -1;
   opacity: .1;
 }
 
 .descricao h1 {
-  font-size: 48px;
+  font-size: clamp(14px, 3vw, 52px);
   font-weight: bold;
   color: var(--text-white);
 }
 
 .descricao p {
-  font-size: 24px;
+  font-size: clamp(9px, 1.5vw, 24px);
   color: var(--text-white);
-  margin-bottom: 12px;
+  margin-bottom: 1vw;
 }
 
 .logos-contato {
-  display: grid;
-  grid-template-columns: 48px 48px 48px;
-  gap: 12px;
+  display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 50px;
+  gap: 1vw;
 }
 
 .logos-contato img {
-  width: 46px;
-  height: 46px;
+  width: clamp(5vw, .2rem + 2vw, 20vw);
 }
 
 .logos-contato .email {
