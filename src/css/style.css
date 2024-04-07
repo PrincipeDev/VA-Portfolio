@@ -34,13 +34,14 @@ body {
 
 .back {
   width: 45vw;
-  height: 740px;
+  height: 100vh;
   position: absolute;
   left: 0;
   top: 0;
 }
 
 .perfil-caracters {
+  width: 60vw;
   display: flex;
   z-index: 2;
   align-items: center;
@@ -48,8 +49,7 @@ body {
 }
 
 .img-perfil {
-  width: 310px;
-  height: 360px;
+  width: 25vw;
 }
 
 .descricao {
@@ -57,20 +57,19 @@ body {
   flex-direction: column;
   margin-left: 20px;
   align-items: center;
+  justify-content: center;
   height: 360px;
 }
 
 .logo {
   position: absolute;
-  width: 360px;
-  height: 360px;
+  width: 25vw;
   z-index: -1;
   opacity: .1;
 }
 
 .descricao h1 {
-  margin-top: 80px;
-  font-size: 52px;
+  font-size: 48px;
   font-weight: bold;
   color: var(--text-white);
 }
