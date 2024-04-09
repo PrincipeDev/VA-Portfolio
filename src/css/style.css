@@ -93,15 +93,51 @@ body {
   width: clamp(5vw, .2rem + 2vw, 20vw);
 }
 
-.logos-contato .email {
-  width: 52px;
-  height: 52px;
-}
-
 #btn-whats {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .perfil-caracters {
+    display: flex;
+    flex-direction: column;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .img-perfil {
+    width: 40vw;
+    margin-bottom: 30px;
+  }
+
+  .descricao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  .logo {
+    position: absolute;
+    width: 40vw;
+  }
+
+  .descricao h1 {
+    font-size: 22px;
+  }
+
+  .descricao p {
+    font-size: 10px;
+  }
+
+  .logos-contato img {
+    width: 7vw;
+  }
 }
 
 main {
