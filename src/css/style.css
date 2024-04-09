@@ -304,6 +304,16 @@ main {
   color: var(--text-black);
 }
 
+@media (max-width: 600px) {
+  #form {
+    height: 320px;
+  }
+
+  .formulario input, #form .btn {
+    height: 38px;
+  }
+}
+
 footer {
   width: 95vw;
   height: 32px;
