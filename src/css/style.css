@@ -207,27 +207,26 @@ main {
 #sobre .line-1{
   display: grid;
   justify-content: center;
-  grid-template-columns: 260px 600px;
-  gap: 30px;
+  grid-template-columns: 22vw 50vw;
+  gap: 1vw;
   align-items: center;
 }
 
 #sobre .line-2{
   display: grid;
   justify-content: center;
-  grid-template-columns: 600px 260px;
-  gap: 30px;
+  grid-template-columns: 50vw 22vw;
+  gap: 1vw;
   align-items: center;
 }
 
 #sobre img {
-  width: 260px;
-  height: 340px;
+  width: 22vw;
 }
 
 #sobre p {
   color: var(--text-white);
-  font-size: 14px;
+  font-size: clamp(8px, 3vw, 14px);
 }
 
 #form {
@@ -264,7 +263,7 @@ main {
 }
 
 #form .btn {
-  width: clamp(20vw, 20vw, 22vw);
+  width: clamp(18vw, 20vw, 22vw);
   height: 54px;
   background-color: var(--button);
   color: var(--text-white);
