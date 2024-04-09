@@ -229,6 +229,30 @@ main {
   font-size: clamp(8px, 3vw, 14px);
 }
 
+@media (max-width: 600px) {
+  #sobre {
+    margin: 5px 5px 50px 5px;
+  }
+
+  #sobre .line-1 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #sobre .line-2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #sobre img {
+    width: 40vw;
+  }
+
+  #sobre p {
+    font-size: 10px;
+  }
+}
+
 #form {
   width: 95vw;
   height: 540px;
