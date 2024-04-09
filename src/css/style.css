@@ -231,7 +231,7 @@ main {
 }
 
 #form {
-  width: 1200px;
+  width: 95vw;
   height: 540px;
   background-color: var(--back-card);
   border-radius: 25px;
@@ -255,7 +255,7 @@ main {
 }
 
 .formulario input {
-  width: 600px;
+  width: 60vw;
   height: 54px;
   border-radius: 25px;
   border: none;
@@ -264,7 +264,7 @@ main {
 }
 
 #form .btn {
-  width: 280px;
+  width: clamp(20vw, 20vw, 22vw);
   height: 54px;
   background-color: var(--button);
   color: var(--text-white);
@@ -282,7 +282,7 @@ main {
 }
 
 footer {
-  width: 1200px;
+  width: 95vw;
   height: 32px;
   color: var(--text-white);
   margin: 10px auto;
