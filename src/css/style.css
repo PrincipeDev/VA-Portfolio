@@ -110,7 +110,7 @@ body {
   }
 
   .img-perfil {
-    width: 40vw;
+    width: 45vw;
     margin-bottom: 30px;
   }
 
@@ -119,20 +119,20 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
+    margin-top: 25px;
   }
 
   .logo {
     position: absolute;
-    width: 40vw;
+    width: 45vw;
   }
 
   .descricao h1 {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .descricao p {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .logos-contato img {
