@@ -351,8 +351,16 @@ main {
     height: 320px;
   }
 
+  #form h1 {
+    font-size: 24px;
+  }
+
   .formulario input, #form .btn {
     height: 38px;
+  }
+
+  #form .btn {
+    font-size: 12px;
   }
 }
 
