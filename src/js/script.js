@@ -5,13 +5,13 @@ const cards = document.getElementById("cards")
 let contador = document.querySelector(".count")
 const btnWhats = document.getElementById("btn-whats")
 
-contador = 1
+//contador = 1
 
 let slide = [
   {
     "titulo": "Escritorio",
     "image": "/src/img/Escritorio.png",
-    "index": 1
+    "index": 0
   },
   {
     "titulo": "Escritorio 2",
@@ -26,20 +26,77 @@ let slide = [
   {
     "titulo": "Suite 1",
     "image": "/src/img/Suite2.png",
-    "index": 2
+    "index": 3
   },
   {
     "titulo": "Suite 2",
     "image": "/src/img/Suite3.png",
-    "index": 3
+    "index": 4
   },
   {
     "titulo": "Sala",
     "image": "/src/img/sala.jpg",
-    "index": 3
+    "index": 5
   }
 ]
 
+contador = 0; // Inicie o contador em 0
+
+function updateProjetos() {
+  cards.innerHTML = "";
+
+  if (slide.length % 2 === 0 || contador < slide.length - 1) {
+    // Renderiza dois elementos se o número de imagens for par ou se não for o último índice
+    for (let i = contador; i < contador + 2 && i < slide.length; i++) {
+      const item = slide[i]; // Use o índice diretamente
+      const cardElement = document.createElement("div");
+      cardElement.classList.add("card");
+
+      cardElement.innerHTML = `
+        <img src="${item.image}"/>
+        <h2>${item.titulo}</h2>
+      `;
+      cards.appendChild(cardElement);
+    }
+  } else {
+    // Renderiza a última imagem sozinha se o número de imagens for ímpar e for o último índice
+    const item = slide[contador];
+    const cardElement = document.createElement("div");
+    cardElement.classList.add("card");
+
+    cardElement.innerHTML = `
+      <img src="${item.image}"/>
+      <h2>${item.titulo}</h2>
+    `;
+    cards.appendChild(cardElement);
+  }
+}
+
+updateProjetos();
+
+function nextSlide() {
+  contador += 2; // Avança de duas em duas imagens
+
+  if (contador >= slide.length) {
+    contador = 0; // Garante que o contador não ultrapasse o último índice
+  }
+  updateProjetos();
+}
+
+function prevSlide() {
+  if(contador > 0) {
+    contador -= 2
+  } else {
+    contador = slide.length -2
+  }
+  updateProjetos();
+}
+
+prevBtn.addEventListener("click", prevSlide);
+nextBtn.addEventListener("click", nextSlide);
+
+
+/*
 function updateProjetos() {
   cards.innerHTML = ""
 
@@ -86,7 +143,7 @@ btnWhats.addEventListener("click", function() {
   window.open(`https://wa.me/${phone}?text=${message}`, "_blank")
 })
 
-/*
+
 function updateProjetos() { // Função utilizada para criar o elemento html contendo o carrossel de imagens
   cards.innerHTML = ""
 
