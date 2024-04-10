@@ -272,6 +272,7 @@ main {
 
   #sobre h1 {
     font-size: 22px;
+    margin-left: 20px;
   }
 
   #sobre .line-1 {
