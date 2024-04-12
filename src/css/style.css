@@ -217,12 +217,29 @@ main {
 }
 
 @media (max-width: 800px) {
+  #projetos {
+    height: 75vh;
+  }
+
   .card {
     width: 70vw;
+    height: 60vh;
   }
 
   .card img {
     width: 60vw;
+    height: 50vh;
+  }
+
+  .card h2 {
+    font-size: 18px;
+  }
+
+  .container-projeto .pass {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 20px;
   }
 }
 
