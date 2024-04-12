@@ -12,29 +12,44 @@ let slide = [
     "index": 0
   },
   {
-    "titulo": "Escritorio 2",
-    "image": "/src/img/Escritorio2.png",
+    "titulo": "Lavabo",
+    "image": "/src/img/Lavabo.png",
     "index": 1
   },
   {
-    "titulo": "Suite",
+    "titulo": "Suite Casal White",
     "image": "/src/img/Suite.png",
     "index": 2
   },
   {
-    "titulo": "Suite 1",
+    "titulo": "Suite Casal Black",
     "image": "/src/img/Suite2.png",
     "index": 3
   },
   {
-    "titulo": "Suite 2",
-    "image": "/src/img/Suite3.png",
+    "titulo": "Quarto Casal",
+    "image": "/src/img/Quarto1.png",
     "index": 4
   },
   {
     "titulo": "Sala",
     "image": "/src/img/sala.jpg",
     "index": 5
+  },
+  {
+    "titulo": "Escritorio Madeira",
+    "image": "/src/img/Escritorio2.png",
+    "index": 6
+  },
+  {
+    "titulo": "Modern Suite",
+    "image": "/src/img/Suite3.png",
+    "index": 7
+  },
+  {
+    "titulo": "Quarto Black",
+    "image": "/src/img/Quarto.png",
+    "index": 8
   }
 ]
 
