@@ -5,8 +5,6 @@ const cards = document.getElementById("cards")
 let contador = document.querySelector(".count")
 const btnWhats = document.getElementById("btn-whats")
 
-//contador = 1
-
 let slide = [
   {
     "titulo": "Escritorio",
@@ -95,55 +93,13 @@ function prevSlide() {
 prevBtn.addEventListener("click", prevSlide);
 nextBtn.addEventListener("click", nextSlide);
 
-
-/*
-function updateProjetos() {
-  cards.innerHTML = ""
-
-  slide.forEach(item => {
-    const cardElement = document.createElement("div")
-    cardElement.classList.add("card")
-    
-    if(item.index === contador) {
-      cardElement.innerHTML = `
-        <img src="${item.image}"/>
-        <h2>${item.titulo}</h2>
-      `
-      cards.appendChild(cardElement)
-    }
-  })
-}
-
-updateProjetos()
-
-function nextSlide() {
-  if(contador == (slide.length / 2)) { 
-    contador = 1
-  } else {
-    contador++
-  }
-  updateProjetos()
-}
-
-function prevSlide() {
-  if(contador > 1) {
-    contador--
-  } else {
-    contador = Math.floor(slide.length / 2)
-  }
-  updateProjetos()
-}
-
-prevBtn.addEventListener("click", prevSlide)
-nextBtn.addEventListener("click", nextSlide)
-
 btnWhats.addEventListener("click", function() {
   const message = "Olá, Estou precisando conversar com você!"
   const phone = "63992850579"
   window.open(`https://wa.me/${phone}?text=${message}`, "_blank")
 })
 
-
+/*
 function updateProjetos() { // Função utilizada para criar o elemento html contendo o carrossel de imagens
   cards.innerHTML = ""
 
