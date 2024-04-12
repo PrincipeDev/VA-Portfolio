@@ -216,6 +216,16 @@ main {
   font-weight: bold;
 }
 
+@media (max-width: 800px) {
+  .card {
+    width: 70vw;
+  }
+
+  .card img {
+    width: 60vw;
+  }
+}
+
 #sobre {
   display: grid;
   justify-content: center;

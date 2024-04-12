@@ -2,8 +2,8 @@ const containerProjeto = document.querySelector(".container-projet")
 const prevBtn = document.querySelector(".voltar")
 const nextBtn = document.querySelector(".proximo")
 const cards = document.getElementById("cards")
-let contador = document.querySelector(".count")
 const btnWhats = document.getElementById("btn-whats")
+let contador = document.querySelector(".count")
 
 let slide = [
   {
@@ -39,8 +39,6 @@ let slide = [
 ]
 
 contador = 0; // Inicie o contador em 0
-
-//let tela = window.innerWidth
 
 if(window.innerWidth > 800) {
   function updateProjetos() {
@@ -92,7 +90,9 @@ if(window.innerWidth > 800) {
     }
     updateProjetos();
   }
-} else {
+} 
+
+if(window.innerWidth < 800) {
   function updateProjetos() { // Função utilizada para criar o elemento html contendo o carrossel de imagens
     cards.innerHTML = ""
   
