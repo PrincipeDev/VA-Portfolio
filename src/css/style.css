@@ -218,12 +218,12 @@ main {
 
 @media (max-width: 800px) {
   #projetos {
-    height: 75vh;
+    height: 70vh;
   }
 
   .card {
     width: 70vw;
-    height: 60vh;
+    height: 58vh;
   }
 
   .card img {
@@ -233,7 +233,7 @@ main {
 
   .card h2 {
     font-size: 18px;
-    margin-top: 15px;
+    margin-top: 10px;
   }
 
   .container-projeto .pass {
