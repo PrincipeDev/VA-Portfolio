@@ -1,4 +1,3 @@
-const containerProjeto = document.querySelector(".container-projet")
 const prevBtn = document.querySelector(".voltar")
 const nextBtn = document.querySelector(".proximo")
 const cards = document.getElementById("cards")
@@ -53,48 +52,48 @@ let slide = [
   }
 ]
 
-contador = 0; // Inicie o contador em 0
+contador = 0 // Inicie o contador em 0
 
 if(window.innerWidth > 800) {
   function updateProjetos() {
-    cards.innerHTML = "";
+    cards.innerHTML = ""
   
     if (slide.length % 2 === 0 || contador < slide.length - 1) {
       // Renderiza dois elementos se o número de imagens for par ou se não for o último índice
       for (let i = contador; i < contador + 2 && i < slide.length; i++) {
-        const item = slide[i]; // Use o índice diretamente
-        const cardElement = document.createElement("div");
-        cardElement.classList.add("card");
+        const item = slide[i] // Use o índice diretamente
+        const cardElement = document.createElement("div")
+        cardElement.classList.add("card")
   
         cardElement.innerHTML = `
           <img src="${item.image}"/>
           <h2>${item.titulo}</h2>
-        `;
-        cards.appendChild(cardElement);
+        `
+        cards.appendChild(cardElement)
       }
     } else {
       // Renderiza a última imagem sozinha se o número de imagens for ímpar e for o último índice
-      const item = slide[contador];
-      const cardElement = document.createElement("div");
-      cardElement.classList.add("card");
+      const item = slide[contador]
+      const cardElement = document.createElement("div")
+      cardElement.classList.add("card")
   
       cardElement.innerHTML = `
         <img src="${item.image}"/>
         <h2>${item.titulo}</h2>
-      `;
-      cards.appendChild(cardElement);
+      `
+      cards.appendChild(cardElement)
     }
   }
   
   updateProjetos();
   
   function nextSlide() {
-    contador += 2; // Avança de duas em duas imagens
+    contador += 2 // Avança de duas em duas imagens
   
     if (contador >= slide.length) {
-      contador = 0; // Garante que o contador não ultrapasse o último índice
+      contador = 0 // Garante que o contador não ultrapasse o último índice
     }
-    updateProjetos();
+    updateProjetos()
   }
   
   function prevSlide() {
@@ -103,7 +102,7 @@ if(window.innerWidth > 800) {
     } else {
       contador = slide.length -2
     }
-    updateProjetos();
+    updateProjetos()
   }
 } 
 
@@ -138,8 +137,8 @@ if(window.innerWidth < 800) {
   }
 }
 
-prevBtn.addEventListener("click", prevSlide);
-nextBtn.addEventListener("click", nextSlide);
+prevBtn.addEventListener("click", prevSlide)
+nextBtn.addEventListener("click", nextSlide)
 
 btnWhats.addEventListener("click", function() {
   const message = "Olá, Estou precisando conversar com você!"
