@@ -105,8 +105,8 @@ if(window.innerWidth > 800) {
     updateProjetos()
   }
 } 
-
-if(window.innerWidth < 800) {
+//window.innerWidth
+if(screen.width < 800) {
   function updateProjetos() { // Função utilizada para criar o elemento html contendo o carrossel de imagens
     cards.innerHTML = ""
   
