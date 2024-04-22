@@ -53,8 +53,27 @@ let slide = [
 ]
 
 contador = 0 // Inicie o contador em 0
+let resizeTimer;
 
-if(window.innerWidth > 800) {
+function atualizarTamanhoDaTela() {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(function() {
+    const larguraDaTela = window.innerWidth;
+
+    if (larguraDaTela > 800) {
+      // Chama a função para larguras de tela maiores que 800
+      paraLarguraMaiorQue800();
+    } else {
+      // Chama a função para larguras de tela menores ou iguais a 800
+      paraLarguraMenorIgualA800();
+    }
+  }, 250); // Defina um tempo de espera adequado, por exemplo, 250ms
+}
+
+atualizarTamanhoDaTela();
+window.addEventListener('resize', atualizarTamanhoDaTela);
+
+function paraLarguraMaiorQue800() {
   function updateProjetos() {
     cards.innerHTML = ""
   
@@ -105,8 +124,8 @@ if(window.innerWidth > 800) {
     updateProjetos()
   }
 } 
-//window.innerWidth
-if(screen.width < 800) {
+
+function paraLarguraMenorIgualA800() {
   function updateProjetos() { // Função utilizada para criar o elemento html contendo o carrossel de imagens
     cards.innerHTML = ""
   
